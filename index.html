@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/header_icon.jpg" />
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        .education {
+            width: min(500px, 95vw);
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+
+        .education__heading {
+            padding-inline-start: 4rem;
+        }
+
+        .education__heading h4 {
+            font-size: 2rem;
+            margin-block: 0.5rem;
+        }
+
+        .education__content {
+            position: relative;
+            padding: 1rem 1rem 1rem 4rem;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .education__content h5 {
+            color: rgba(0, 0, 0, 0.9);
+            font-size: 1rem;
+            margin-block: 0;
+        }
+
+        .education__content p {
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 0.9rem;
+            margin-block-start: 0.5rem;
+            margin-block-end: 0;
+        }
+
+        .education__content .year {
+            position: absolute;
+            content: var(--year);
+            width: 2rem;
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.6rem;
+            color: white;
+            border-radius: 50%;
+            background-color: #b3b3b3;
+            box-shadow: inset 0 0 0 1px white;
+            border: 1px solid #b3b3b3;
+            left: 1rem;
+            top: 0.74rem;
+        }
+
+        .education__content:hover {
+            background-color: rgba(230, 230, 230, 0.48);
+            border-radius: 0.25rem;
+        }
+
+        .education__content:not(:last-child):before {
+            position: absolute;
+            content: "";
+            width: 4px;
+            background-color: #dedede;
+            left: calc(2rem - 2px);
+            top: 2.74rem;
+            bottom: -0.74rem;
+            z-index: -1;
+        }
+    </style>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">SITARAM GENUJI SHINDE</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Education</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br> I'am <span class="home__title-color">Sitaram Shinde</span><br>
+                    A English Teacher
+                </h1>
+                <a href="mailto:shindesitaram616@gmail.com" class="button" target="_blank">Let's Connect</a>
+
+                <div class="home__social">
+                    <a href="tel:+9049314532" class="home__social-icon" target="_blank"><i class="fa fa-phone"></i>
+                        <span class="tooltip" style="font-size: 10px;">Phone</span>
+                    </a>
+                    <a href="mailto:shindesitaram616@gmail.com" class="home__social-icon" target="_blank"><i
+                            class='fas fa-envelope'></i>
+                        <span class="tooltip" style="font-size: 10px;">Email</span>
+                    </a>
+
+                    <a href="https://wa.me/1234567890" class="home__social-icon" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="tooltip" style="font-size: 10px;">WhatsApp</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/perfil.png" alt="">
+                </div>
+
+                <div>
+                    <p class="about__text">With over 14 years of dedicated teaching experience, my journey as an English educator has been deeply rewarding. I am driven by a profound passion for nurturing a profound love for literature and language among my students. Throughout my career, I have endeavored to instill in them not only the essential skills of reading, writing, and communication but also a lasting appreciation for the richness of the English language.
+                        <br><br>
+                        My approach is anchored in fostering an engaging and supportive learning environment where each student feels empowered to explore and express themselves through language. I tailor my teaching methods to cater to the individual needs and learning styles of my students, ensuring that they not only grasp foundational concepts but also develop critical thinking and analytical skills. By integrating diverse literary texts and contemporary resources, I strive to make learning both enriching and relevant. My ultimate goal is to inspire a lifelong curiosity and confidence in my students, equipping them not just for academic success but for a future where effective communication and literary appreciation are invaluable assets.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK Experience =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Teaching Experience</h2>
+
+
+
+            <div class="timeline">
+
+                <!--first-->
+                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                    <div class="timeline__event__icon ">
+
+                    </div>
+                    <div class="timeline__event__date">
+                        2021-2024
+                    </div>
+                    <div class="timeline__event__content ">
+                        <div class="timeline__event__title">
+                            MIT High School & MIT Junior College (MCVC), Chh. Sambhajinagar.
+                        </div>
+                        <div class="timeline__event__description">
+                            <p>Experienced English teacher in junior college and secondary levels, fostering language proficiency and academic growth through engaging and effective teaching methods.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--second-->
+
+                <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                    <div class="timeline__event__icon">
+
+                    </div>
+                    <div class="timeline__event__date">
+                        2020 - 2024
+                    </div>
+                    <div class="timeline__event__content">
+                        <div class="timeline__event__title">
+                            Dnyansadhana Coaching Classes, Chh. Sambhajinagar.
+
+                        </div>
+                        <div class="timeline__event__description">
+                            <p>Experienced English teacher in coaching classes, specializing in State Board and CBSE patterns for primary, secondary, and higher secondary students.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--third-->
+
+                <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                    <div class="timeline__event__icon">
+
+                    </div>
+                    <div class="timeline__event__date">
+                        2010 - 2020
+                    </div>
+                    <div class="timeline__event__content">
+                        <div class="timeline__event__title">
+                            Individuale coaching
+                        </div>
+                        <div class="timeline__event__description">
+                            <p>Dedicated English teacher offering personalized instruction to primary and secondary students, including both semi-English and English medium learners in my classes.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+        </section>
+
+
+        <!--===== Education =====-->
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Education Timeline</h2>
+            <div style="display: flex; margin: auto;">
+
+                <div class='education'>
+
+                    <div class='education__content'>
+                        <h5>B.Ed </h5>
+                        <span class='year'>2018</span>
+                        <p>
+                            <b>Babasaheb Ambedkar Marathwada University (BAMU), Aurangabad</b>
+                            <br><br>
+                            <b><i style="font-style: italic; font-weight: bolder;">Grade : </i>A++</b>
+                        </p>
+                    </div>
+
+                    <div class='education__content'>
+                        <h5>M.A. </h5>
+                        <span class='year'>2018</span>
+                        <p>
+                            <b>Yashvantrao Chavan Maharashtra Open University (YCMOU), Nashik</b>
+                            <br><br>
+                            <b><i style="font-style: italic; font-weight: bolder;">Percentage : </i>65%</b>
+                        </p>
+                    </div>
+
+                    <div class='education__content'>
+                        <h5>B.A </h5>
+                        <span class='year'>2018</span>
+                        <p>
+                            <b>Babasaheb Ambedkar Marathwada University (BAMU), Aurangabad</b>
+                            <br><br>
+                            <b><i style="font-style: italic; font-weight: bolder;">Percentage : </i>48%
+                            </b>
+                        </p>
+                    </div>
+
+                    <div class='education__content'>
+                        <h5>H.S.C. </h5>
+                        <span class='year'>2018</span>
+                        <p>
+                            <b>Pune Board</b>
+                            <br><br>
+                            <b><i style="font-style: italic; font-weight: bolder;">Percentage : </i>61%</b>
+                        </p>
+                    </div>
+
+                    <div class='education__content'>
+                        <h5>S.S.C. </h5>
+                        <span class='year'>2018</span>
+                        <p>
+                            <b>Pune Board</b>
+                            <br><br>
+                            <b><i style="font-style: italic; font-weight: bolder;">Percentage : </i>59.14%</b>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <img src="assets/img/education.jpg" alt="" class="skills__img" style="margin-top: 15vh;">
+                </div>
+            </div>
+        </section>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">SITARAM GENUJI SHINDE</p>
+            <div class="footer__social">
+
+                <a class="footer__icon home__social-icon footer__copy" target="_blank">
+                    <span class="footer__title" style="font-size: 1rem; color: white; font-style: italic;"><i
+                            class="fa fa-map-marker"></i> Temporary Address:</span>
+                    <span class="footer__address">Plot. No. 23, New Gajanan Colony,
+                        Garkheda Parisar, Chh. Sambhaji Nagar.</span>
+                </a>
+
+                <a class="footer__icon home__social-icon footer__copy" target="_blank">
+                    <span class="footer__title" style="font-size: 1rem; color: white; font-style: italic;"><i
+                            class="fa fa-map-marker-alt"></i> Permanent Address:</span>
+                    <span class="footer__address">At. Post – Gunj (B.K.), Tq. Ghansawangi, Dist – Jalna</span>
+                </a>
+
+
+            </div>
+            <p class="footer__copy">Inspire. Learn. Achieve. Mastering English for a brighter future!</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://kit.fontawesome.com/fc596df623.js" crossorigin="anonymous"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
